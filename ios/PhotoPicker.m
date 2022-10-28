@@ -142,7 +142,7 @@ RCT_REMAP_METHOD(clean,
 - (void)photoNavigationViewController:(HXCustomNavigationController *)photoNavigationViewController didDoneAllList:(NSArray<HXPhotoModel *> *)allList photos:(NSArray<HXPhotoModel *> *)photoList videos:(NSArray<HXPhotoModel *> *)videoList original:(BOOL)original{
 	BOOL isOriginal = original || _manager.configuration.requestOriginalImage;
 	[SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
-	[SVProgressHUD showWithStatus:@"文件处理中，请稍后..."];
+	[SVProgressHUD showWithStatus:@"File processing, please wait..."];
 	NSMutableArray *files = [NSMutableArray array];
 	[allList enumerateObjectsUsingBlock:^(HXPhotoModel*  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
 		NSMutableDictionary *file  = [NSMutableDictionary dictionary];
